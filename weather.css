@@ -1,0 +1,279 @@
+@media (max-width: 700px) {
+    #forecastContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .forecast-card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .weather-card {
+        width: 90%;
+    }
+} /*This media query applies styles when the viewport width is 700 pixels or less. It changes the layout of the forecast container to a column format and centers the items within it, making it more suitable for smaller screens. */
+
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+} /*This class is used to create a container for the entire application, setting a maximum width of 1200 pixels and centering it horizontally on the page with automatic margins. It also adds padding around the content for better spacing. */
+
+#forecastSection {
+    display: none;
+}/*This style rule hides the forecast section by setting its display property to none. This can be used to initially hide the forecast section until it is needed, such as after a user performs a search for weather information. */
+
+#forecastContainer > div {
+        width: 100%;
+        max-width: 300px;
+}/*This style rule targets the direct child div elements of the forecast container, setting their width to 100% of their parent container while also limiting their maximum width to 300 pixels. This ensures that the forecast cards are responsive and do not exceed a certain size, making them look good on various screen sizes. */
+
+
+body {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #9face6);
+    background-color: hwb(245 44% 51% / 0.163);
+    margin: 0;
+    min-height: 100vh;
+    padding: 20px;
+}/*This style rule applies to the entire body of the webpage, setting a specific font family for the text, creating a linear gradient background that transitions from a light blue to a light purple, and adding a semi-transparent background color using the HWB color model. It also removes default margins, ensures the minimum height of the page is 100% of the viewport height, and adds padding around the content for better spacing. */
+
+#forecastContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+   
+    gap: 20px;
+    padding: 20px;
+} /*This style rule creates a flex container for the forecast cards, centering them and allowing them to wrap if necessary. It also adds padding around the container for better spacing. */
+
+.p {
+    font-size: 1.2em;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #353535;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}/*This style rule applies to elements with the class "p", setting a larger font size, a specific font family, and a white color for the text. It also centers the text and adds a margin at the bottom for spacing. */
+
+#forecastContainer > div {
+    background-color: white;
+    border: #ccc 1px solid;
+    
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 150px;
+    flex-shrink: 0;
+}/*This style rule targets the direct child div elements of the forecast container, giving them a white background, a light gray border, padding for spacing, rounded corners, and a subtle box shadow for depth. It also centers the text within the cards and sets a fixed width while preventing them from shrinking when the container is resized. */
+
+#h1 {
+    font-size: 2.5em;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: #333 1px 1px 2px;
+}/*This style rule applies to the element with the ID "h1", setting a large font size, a specific font family, and a dark gray color for the text. It also adds a margin at the bottom for spacing, centers the text, and applies a subtle text shadow for added visual interest. */
+
+h1:hover {
+    transform: translateY(-5px);
+}/*This style rule applies a hover effect to the h1 element, causing it to move up by 5 pixels when the user hovers over it, creating a dynamic and interactive visual effect. */
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}/*This style rule creates a flex container for the search box, centering its contents and adding a gap between the input and button. It also adds a margin at the bottom for spacing and allows the items to wrap to the next line if necessary, making it responsive on smaller screens. */
+
+.search-box input {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 1px;
+    min-width: 200px;
+}/*This style rule applies to the input field within the search box, setting its width to a minimum of 200 pixels and adding a margin at the bottom for spacing. */
+
+.search-box ::placeholder {
+    color: #999;
+    text-align: center;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}/*This style rule targets the placeholder text within the search box input field, setting its color to a light gray and centering the text. It also applies a specific font family to ensure consistency with the rest of the design. */
+
+.search-box button:hover {
+    transform: translateY(-2.5px);
+    background-color: rgba(255, 255, 255, 0.4);
+}/*This style rule applies a hover effect to the search button, causing it to move up by 2.5 pixels and changing its background color to a semi-transparent white when the user hovers over it, providing visual feedback and enhancing interactivity. */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}/*This style rule applies to all anchor (a) elements, removing the default underline text decoration and inheriting the color from their parent elements, ensuring that links blend seamlessly with the overall design of the webpage. */
+
+.search-box input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}/*This style rule applies to the input field within the search box, setting its width to a minimum of 200 pixels and adding a margin at the bottom for spacing. */
+
+.search-box button {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}/*This style rule applies to the search button, setting its padding, font size, and background color. It also removes the default border and adds a border radius for rounded corners. The cursor is set to a pointer to indicate it's clickable. */
+
+#weatherResult {
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+}/*This style rule applies to the element with the ID "weatherResult", setting a larger font size, a dark gray color for the text, and centering the text within the element. This ensures that the weather results are prominently displayed and easy to read. */
+
+#weatherResult h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}/*This style rule applies to h2 elements within the weather result container, setting a larger font size and adding a margin at the bottom for spacing. It also centers the text to ensure that the headings for the weather results are visually distinct and well-organized. */
+
+.h2 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+}/*This style rule applies to elements with the class "h2", creating a flex container that centers its contents and adds a gap between them. It also adds a margin at the top for spacing and centers the text, making it visually appealing and well-organized. */
+
+#weatherResult .weather-card {
+    background-color: white;
+    border: #ccc 1px solid;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}/*This style rule applies to elements with the class "weather-card" that are within the weather result container. It gives them a white background, a light gray border, padding for spacing, rounded corners, and a subtle box shadow for depth. It also centers the text within the card and sets a maximum width of 400 pixels while allowing it to take up the full width of its container on smaller screens. The margin is set to auto to center the card horizontally within its container. */
+
+.forecast-card {
+    background-color: white;
+    border: #ccc 1px solid;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 150px;
+    max-width: 200px;
+    flex-shrink: 0 ;
+    margin-bottom: 10px;
+}/*This style rule applies to elements with the class "forecast-card", giving them a white background, a light gray border, padding for spacing, rounded corners, and a subtle box shadow for depth. It also centers the text within the card, sets a fixed width of 150 pixels with a maximum width of 200 pixels, prevents the card from shrinking when the container is resized, and adds a margin at the bottom for spacing between forecast cards. */
+
+.weather-card img {
+    width: 90px;
+    height: 90px;
+}/*This style rule applies to image elements within the weather card, setting their width and height to 90 pixels. This ensures that the weather icons are consistently sized and visually balanced within the card. */
+
+.weather-card p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.05rem;
+    margin: 10px 0;
+}/*This style rule applies to paragraph elements within the weather card, setting a specific font family for the text, a font size of 1.05 rem for better readability, and adding a margin of 10 pixels on the top and bottom for spacing between the paragraphs. */
+
+.forecast-card :hover {
+    transform: translateY(-5px); /*This adds a hover effect to the forecast cards, making them slightly lift up when hovered over, providing a visual cue to the user. */
+
+    transition: transform 0.3s ease; /*This ensures that the hover effect is smooth and transitions over 0.3 seconds, enhancing the user experience. */
+}
+
+#savedCities{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}/*This style rule applies to the element with the ID "savedCities", creating a flex container that centers its contents, adds a gap between them, allows them to wrap to the next line if necessary, and adds a margin on the top and bottom for spacing. This ensures that the saved cities are displayed in an organized and visually appealing manner. */
+
+.saved-city-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color:rgba(255, 255, 255, 0.25);
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: 1em;
+    color: white;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+}/*This style rule applies to elements with the class "saved-city-btn", setting their padding, font size, background color, text color, and cursor. It also removes the default border and adds a border radius for rounded corners, making the buttons visually appealing and indicating that they are clickable. */
+
+
+.saved-city-button {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: #007BFF;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: 1em;
+    color: white;
+    cursor: pointer;
+}
+
+.saved-city-button:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.saved-city-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    
+}
+
+.delete-city-button {
+    padding: 5px 10px;
+    border-radius: 50%;/*This makes the delete button circular by setting the border radius to 50%. */
+
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+   
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.delete-city-button:hover {
+    background-color: darkred;
+
+    transform: translateY(-5px);
+}/*This style rule applies a hover effect to the delete city buttons, changing their background color to dark red and moving them up by 5 pixels when the user hovers over them, providing visual feedback and enhancing interactivity. */
+
+#clearCitiesButton {
+     display: block;
+    margin: 10px auto 20px auto;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 20px; 
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+}
+
+#clearCitiesButton:hover {
+    background-color: #222;
+    transform: translateY(-5px);
+}/*This style rule applies a hover effect to the clear cities button, changing its background color to a lighter gray and moving it up by 5 pixels when the user hovers over it, providing visual feedback and enhancing interactivity. */

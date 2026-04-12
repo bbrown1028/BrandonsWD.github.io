@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+
+
+</head>
+
+<body>
+
+<div class="app-container">
+    <header>
+        <h1 id="h1"><a href="index.html">Weather Dashboard</a></h1>
+        <p class="p">Get the current weather and 5-day forecast for any city!</p>
+    </header>
+</div>
+<section class="search-box">
+    <input type="text" id="cityInput" placeholder="Enter city name">
+    <button id="searchButton">Search</button>
+</section>
+
+
+
+<div id="weatherResult"></div>
+
+<section id="forecast">
+    <div id="forecastSection">
+        <h2 class="h2">5-Day Forecast</h2>
+        <div id="forecastContainer"></div>
+    </div>
+</section>
+
+<section id="savedCitiesSection">
+    <h2 class="h2">Saved Cities</h2>
+    <div id="savedCities"></div>
+    <button id="clearCitiesButton">Clear Saved Cities</button>
+    <div id="savedCities"></div>
+</section>
+
+<script src="weather.js" defer></script> <!--Defer means that the script will be executed after the HTML document has been fully parsed, ensuring that the DOM elements are available for manipulation when the script runs. This is particularly useful for scripts that interact with the DOM, as it prevents errors that can occur if the script tries to access elements that haven't been loaded yet. -->
+
+
+</body>
+</html>
