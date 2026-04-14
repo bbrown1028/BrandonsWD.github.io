@@ -1,21 +1,17 @@
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     #forecastContainer {
         flex-direction: column;
         align-items: center;
     }
 
     .forecast-card {
-        width: 90%;
+        width: 100%;
         max-width: 300px;
     }
 
-    .weather-card {
-        width: 90%;
-    }
 
     #weatherResult{
-        flex-direction: column;
-        align-items: center;
+       width:95%;
     }
 } /*This media query applies styles when the viewport width is 700 pixels or less. It changes the layout of the forecast container to a column format and centers the items within it, making it more suitable for smaller screens. */
 
@@ -41,15 +37,16 @@ body {
     background-color: hwb(245 44% 51% / 0.163);
     margin: 0;
     min-height: 100vh;
-    padding: 20px;
+    padding: 0px;
+    overflow-x:hidden;
 }/*This style rule applies to the entire body of the webpage, setting a specific font family for the text, creating a linear gradient background that transitions from a light blue to a light purple, and adding a semi-transparent background color using the HWB color model. It also removes default margins, ensures the minimum height of the page is 100% of the viewport height, and adds padding around the content for better spacing. */
 
 #forecastContainer {
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap:wrap;
    
-    gap: 20px;
+    gap: 10px;
     padding: 20px;
 } /*This style rule creates a flex container for the forecast cards, centering them and allowing them to wrap if necessary. It also adds padding around the container for better spacing. */
 
@@ -141,9 +138,12 @@ a {
 }/*This style rule applies to the search button, setting its padding, font size, and background color. It also removes the default border and adds a border radius for rounded corners. The cursor is set to a pointer to indicate it's clickable. */
 
 #weatherResult {
+    margin:20px auto;
     font-size: 1.2em;
+    max-width:500px;
     color: #333;
     text-align: center;
+    box-sizing:border-box;
 }/*This style rule applies to the element with the ID "weatherResult", setting a larger font size, a dark gray color for the text, and centering the text within the element. This ensures that the weather results are prominently displayed and easy to read. */
 
 #weatherResult h2 {
