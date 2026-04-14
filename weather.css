@@ -10,7 +10,7 @@
     }
 
     .weather-card {
-        width: 90%;
+        width: 80%;
     }
 } /*This media query applies styles when the viewport width is 700 pixels or less. It changes the layout of the forecast container to a column format and centers the items within it, making it more suitable for smaller screens. */
 
