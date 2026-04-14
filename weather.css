@@ -11,9 +11,17 @@
 
 
     #weatherResult{
-       width:95%;
+       width:90%;
+        max-width:500px;
+        margin:20px auto;
+        border-sizing: border-box;
+        overflow-wrap:break-word;
     }
 } /*This media query applies styles when the viewport width is 700 pixels or less. It changes the layout of the forecast container to a column format and centers the items within it, making it more suitable for smaller screens. */
+*{
+    box-sizing:border-box:
+}
+
 
 .app-container {
     max-width: 1200px;
